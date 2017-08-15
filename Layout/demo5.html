@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+  <title>任务5</title>
+  <meta charset="utf-8">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .s {
+      background-color: #f1f1f1;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)!important;
+    }
+
+    .con {
+      width: 377px;
+      margin: 0 auto;
+      padding: 10px 0px;
+    }
+
+    .nav {
+      color: #000;
+      margin: 0;
+      list-style: none;
+      padding: 0;
+    }
+
+    .nav ul {
+      text-align: center;
+    }
+
+    .nav:after {
+      content: '';
+      display: block;
+      clear: both;
+     }
+
+     .nav>li {
+       float: left;
+       position: relative;
+     }
+
+
+    .nav li a {
+      display: block;
+      padding: 8px 16px;
+      color: #333;
+      text-decoration: none;
+      border: 1px solid #ccc;
+      border-right: 0;
+    }
+
+    .nav li:first-child a {
+      border-radius: 6px 0 0 6px;
+    }
+
+    .nav li:last-child a {
+      border-right: 1px solid #ccc;
+      border-radius: 0 6px 6px 0;
+    }
+
+    .nav li a:hover {
+      color: #000;
+      background-color: #ccc;
+    }
+
+    /*任务5*/
+    .c {
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    .container {
+      margin-top: 5%;
+      padding: 30px 1px;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .container .img1 {
+      float: right;
+      width: 200px;
+      margin-left: 20px;
+      border-radius: 6px;
+    }
+
+    .uesr .img2 {
+      height: 50px;
+      width: 50px;
+      border-radius: 25px;
+      margin: 0px 10px;
+      vertical-align: middle;
+    }
+
+    .uesr span:last-child {
+      color: #ccc;
+    }
+
+    .main {
+
+    }
+
+    .main h3 {
+      line-height: 2em;
+    }
+
+    .main p {
+      height: 3em;
+      width: 350px;
+      line-height: 1.5em;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
+    .btn a {
+      margin-left: 20px;
+      display: inline-block;
+      padding: 5px 10px;
+      text-decoration: none;/*清除下划线*/
+      border: 1px solid red;
+      border-radius: 3px;
+      cursor: pointer;/*让鼠标变成手指*/
+      background-color: #fff;
+      color: red;
+      margin-top: 30px;
+    }
+
+    .clearfix:after {
+      content: '';
+      display: block;
+      clear: both;
+     }
+  </style>
+</head>
+<body>
+
+  <div class="s">
+    <div class="con">
+      <ul class="nav">
+        <li><a href="demo1.html">任务1</a></li>
+        <li><a href="demo2.html">任务2</a></li>
+        <li><a href="demo3.html">任务3</a></li>
+        <li><a href="demo4.html">任务4</a></li>
+        <li><a href="demo5.html">任务5</a></li>
+      </ul>
+    </div>
+  </div>
+
+<div class="c">
+  <div class="container clearfix">
+      <img class="img1" src="https://ooo.0o0.ooo/2017/05/29/592afe45f35c7.png">
+    <div class="uesr">
+      <img class="img2" src="https://ooo.0o0.ooo/2017/05/29/592afe45f35c7.png">
+      <span>林幕之</span>&nbsp;&nbsp;&nbsp;<!--&nbsp;是空格-->
+      <span>8小时前<span>
+    </div>
+    <div class="main">
+      <h3>坚持“读书”这些年，人生真是太值了</h3>
+      <p>2017.5.25|NO.18 前几天，在国内的大学朋友给我发来微信。他说：五年前，刚进大学
+        的时候我们是一样的起点，如果当时我和你一样坚持不断地坚持学习11111111111111111
+        11111111111111111111111111111111111111111111111111111111111111111111</p>
+    </div>
+    <div class="btn">
+      <a href="">读书</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

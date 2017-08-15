@@ -1,0 +1,580 @@
+/*css reset*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.Fullpage {
+  min-width: 1139px;
+}
+
+/*base*/
+
+.layout {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*index*/
+html,body {
+  height: 100%;
+  text-align: center;
+}
+
+#header {
+  background: url("../images/tuina-002.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#header .nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+#header .nav .logo {
+  color: #fed136;
+  font-size: 30px;
+  line-height: 50px;
+  float: left;
+}
+
+#header .nav .logo:hover {
+  opacity: 0.5;
+}
+
+#header .nav-list {
+  float: right;
+}
+
+#header .nav-list li {
+  float: left;
+  padding: 15px;
+}
+
+#header .nav-list li a:hover {
+  color: #fed136;
+}
+
+#header .nav-list li a {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#header .header-title {
+  padding: 200px 0px;
+  color: #fff;
+}
+
+#header .header-title h2 {
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+
+#header .header-title h1 {
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 75px;
+  margin-bottom: 50px;
+}
+
+#header .header-title .btn {
+  color: #fff;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 15px 30px;
+  background-color: #fed136;
+  opacity: 0.7;
+}
+
+#header .header-title .btn:hover {
+  opacity: 1;
+}
+
+/*content pub*/
+#services,#six-design,#about,#team {
+  padding: 150px 0;
+}
+
+#services h3,#six-design h3,#about h3,#team h3 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+#services .little-title,#six-design .little-title,#about .little-title,#team .little-title {
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 75px;
+  color: #777;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/*services*/
+#services .services-wrap li {
+  width: 360px;
+  float: left;
+  margin-left: 29px;
+}
+
+#services .services-wrap li p {
+  color: #777;
+}
+
+#services .services-wrap {
+  margin-left: -30px;
+}
+
+#services .services-wrap li i {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #fed136;
+  display: inline-block;
+  position: relative;
+}
+
+.fa-hand-grab-o:before, .fa-hand-rock-o:before {
+    content: "\f255";
+    position: absolute;
+    top: 5px;
+    left: 15px;
+}
+
+#services .services-wrap li h4 {
+  margin: 15px 0;
+}
+
+/*six-design*/
+#six-design {
+  background-color: #f7f7f7;
+}
+
+#six-design .six-design-wrap li {
+  width: 340px;
+  float: left;
+  margin-left: 30px;
+  background-color: #fff;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+#six-design .six-design-wrap li img {
+  height: 260px;
+  vertical-align: bottom;
+}
+
+#six-design .six-design-wrap li h4 {
+  margin-top: 25px;
+}
+
+#six-design .six-design-wrap li>p {
+  font-style: italic;
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 25px;
+}
+
+#six-design .six-design-wrap .hover {
+  position: relative;
+  opacity: 0;
+}
+
+#six-design .six-design-wrap .hover-bgc {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 260px;
+  background-color: #fed136;
+}
+
+#six-design .six-design-wrap .fa-plus-square {
+  color: #fff;
+}
+
+.fa-plus-square:before {
+    content: "\f0fe";
+    position: absolute;
+    top: 106px;
+    left: 149px;
+}
+
+#six-design .six-design-wrap .hover-wrap:hover .hover {
+  opacity: 0.8;
+  transition: all ease .5s;
+}
+
+/*about*/
+#about .center-time {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 3px solid #f1f1f1;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 95px;
+  font-style: normal;
+  color: #fff;
+  background-color: #fed136;
+  opacity: 0.9;
+}
+
+#about .center-time:hover {
+  opacity: 1;
+  border-color: #fed136;
+}
+
+#about .about-content h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#about .about-content p {
+  color: #777;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+#about li {
+  position: relative;
+  padding-bottom: 160px;
+  margin-left: 1px;
+}
+
+#about li:last-child {
+  padding-bottom: 0;
+}
+
+#about li:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  border-left: 2px solid #f1f1f1;
+  height: 100%;
+  z-index: -1;
+}
+
+#about li:nth-child(odd) .about-content {
+  position: absolute;
+  right: 50%;
+  top: 0;
+  width: 350px;
+  text-align: right;
+  margin-right: 80px;
+}
+
+#about li:nth-child(even) .about-content {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 350px;
+  text-align: left;
+  margin-left: 80px;
+}
+
+#about li:last-child p {
+  display: inline-block;
+  width: 140px;
+  height: 140px;
+  border: 3px solid #f1f1f1;
+  border-radius: 50%;
+  font-style: normal;
+  color: #fff;
+  background-color: #fed136;
+  opacity: 0.9;
+  line-height: 24px;
+  padding-top: 18px;
+}
+
+#about li:last-child p:hover {
+  opacity: 1;
+  border-color: #fed136;
+}
+
+/*team*/
+#team {
+  background-color: #f7f7f7
+}
+
+#team ul {
+  margin-left: -30px;
+}
+
+#team li {
+  float: left;
+  width: 360px;
+  margin-left: 30px;
+}
+
+#team ul li img {
+  width: 180px;
+  height: 180px;
+  border: 5px solid #f0f7f0;
+  border-radius: 50%;
+}
+
+#team ul li h4 {
+  padding-top: 30px;
+  margin-bottom: 6px;
+}
+
+#team ul li h5 {
+  margin: 0;
+  color: #777;
+  padding: 0 0 20px;
+}
+
+#team ul li p {
+  width: 60%;
+  margin: 0 auto;
+}
+
+/*contact*/
+#contact {
+  background: url("../images/tuina-002.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#contact .layout {
+  padding: 100px 0;
+}
+
+#contact .form h3 {
+  font-size: 40px;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+#contact .form>p {
+  margin-bottom: 60px;
+  font-style: italic;
+}
+
+#contact .form .form-left,#contact .form .form-right {
+  float: left;
+  width: 50%;
+  padding: 0 20px;
+}
+
+#contact .form .form-left input,#contact .form .form-right textarea {
+  padding: 15px;
+  width: 100%;
+  border: 1px solid #fed136;
+  border-radius: 5px;
+  outline: none;
+  display: block;
+  font: 400 14px/14px Arial;
+  margin-top: 10px;
+}
+
+#contact .form-left input {
+  height: 50px;
+}
+
+#contact .form-right textarea {
+  height: 230px;
+  margin-bottom: 10px;
+}
+
+#contact .form input[type="submit"] {
+  padding: 15px 30px;
+  color: #fff;
+  background-color: #fed136;
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  opacity: 0.7;
+}
+
+#contact .form input[type="submit"]:hover {
+  opacity: 1;
+}
+
+/*footer*/
+#footer {
+  padding: 30px 0 20px 0;
+  background-color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#footer p {
+  float: left;
+  padding: 0 30px;
+}
+
+#footer .footer-link {
+  margin-left: 50%;
+}
+
+#footer a {
+  float: right;
+  color: #000;
+  margin-left: 30px;
+  opacity: 0.9;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+/*wheel1*/
+button {
+  outline: none;
+}
+.btn {
+  padding: 10px 15px;
+  border: 1px solid #fed136;
+  border-radius: 6px;
+  cursor: pointer;
+  -webkit-transition:all .5s ease;
+  -moz-transition:all .5s ease;
+  -ms-transition:all .5s ease;
+  -o-transition:all .5s ease;
+  transition:all .5s ease;
+}
+.btn:hover {
+  background-color: #286090;
+  border: 1px #204d74 solid;
+}
+.btn-modal {
+  background-color: #fed136;
+  color: #fff;
+}
+.madal-layer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+.mod {
+  width: 600px;
+  border-radius: 6px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #fff;
+}
+.head {
+  padding: 10px 15px;
+  line-height: 30px;
+}
+.close {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-transition:all .3s ease;
+  -moz-transition:all .3s ease;
+  -ms-transition:all .3s ease;
+  -o-transition:all .3s ease;
+  transition:all .3s ease;
+}
+.close:hover {
+  -moz-transform:rotate(180deg);
+  -webkit-transform:rotate(180deg);
+  -o-transform:rotate(180deg);
+  -ms-transform:rotate(180deg);
+  transform:rotate(180deg);
+}
+.body {
+  padding: 22px 16px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.footer {
+  padding: 15px;
+  text-align: right;
+}
+.footer .btn {
+  margin-left: 10px;
+}
+.btn-close {
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+.btn-close:hover {
+  background-color: #e6e6e6;
+  border: 1px #adadad solid;
+}
+
+
+.tabs-usage{
+  color: #959595;
+}
+.tab-nav{
+  margin-top: 10px;
+  border-bottom: 1px #e0e0e0 solid;
+}
+.tab-nav>li{
+  float: left;
+  color: #fed136;
+  font-size: 12px;
+  padding: 15px;
+  margin-right: 2px;
+  border-radius: 6px 6px 0 0;
+  margin-bottom: -1px;
+  cursor: pointer;
+}
+.tab-nav .active{
+  color: #343334;
+  border: 1px #e0e0e0 solid;
+  border-bottom-color: #fff;
+}
+.tab-nav>li:hover{
+  background-color: #eee;
+  border-bottom: 1px solid #eee;
+  color: #072e56;
+}
+.tab-content{
+  padding: 10px 0;
+}
+.tab-content>li{
+  color: #080800;
+  line-height: 1.4;
+  display: none;
+}
+.tab-content .active{
+  display: block;
+}

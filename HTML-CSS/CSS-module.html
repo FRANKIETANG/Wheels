@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+  .con {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .mod {
+    position: fixed;/*position 属性规定元素的定位类型。fixed	生成绝对定位的元素，相对于浏览器窗口进行定位。元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。*/
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .mod .pan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);/*按照设定的x,y参数值,当值为负数时，反方向移动物体，其基点默认为元素 中心点，也可以根据transform-origin进行改变基点。*/
+    background-color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+/*哇这一段真的学到了，是这样的，先用fixed把mod脱离文档流，然后用absolute把pen在脱离文档流的地方绝对定位，同时定死了它的宽度和con一样，用transform: translate(-50%, -50%)让pen到了这个
+只有这个盒子的最顶最左，再进行编辑*/
+  .mod .pan header, .mod .pan footer{
+    background-color: #009688;
+    padding: 1px 16px;
+    color: #fff;
+  }
+
+  .mod .pan .close {
+    float: right;
+    margin-top: 16px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .mod .pan main {
+    padding: 16px;
+  }
+  </style>
+</head>
+<body>
+  <div class="con">
+    <h1>1111111</h1>
+    <h1>1111111</h1>
+    <h1>1111111</h1>
+    <h1>1111111</h1>
+
+    <div class="mod">
+      <div class="pan">
+        <header>
+          <span class="close">×</span>
+          <h3>h<h3>
+        </header>
+        <main>
+          <p>pppppppp</p>
+          <p>pppppppp</p>
+        </main>
+        <footer>
+          <p>f</f>
+        </footer>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
