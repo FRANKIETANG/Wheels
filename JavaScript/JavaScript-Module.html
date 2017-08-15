@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>题目二</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      button {
+        outline: none;
+      }
+      .btn {
+        padding: 10px 15px;
+        border: 1px solid #2e6da4;
+        border-radius: 6px;
+        cursor: pointer;
+        -webkit-transition:all .5s ease;
+    	  -moz-transition:all .5s ease;
+    	  -ms-transition:all .5s ease;
+    	  -o-transition:all .5s ease;
+    	  transition:all .5s ease;
+      }
+      .btn:hover {
+        background-color: #286090;
+        border: 1px #204d74 solid;
+      }
+      .btn-modal {
+        background-color: #337ab7;
+        color: #fff;
+      }
+      .madal-layer {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: none;
+      }
+      .mod {
+        width: 600px;
+        border-radius: 6px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        background-color: #fff;
+      }
+      .head {
+        padding: 20px 16px;
+        line-height: 30px;
+      }
+      .close {
+        float: right;
+        font-size: 20px;
+        cursor: pointer;
+        -webkit-transition:all .3s ease;
+    	  -moz-transition:all .3s ease;
+    	  -ms-transition:all .3s ease;
+    	  -o-transition:all .3s ease;
+    	  transition:all .3s ease;
+      }
+      .close:hover {
+        -moz-transform:rotate(180deg);
+      	-webkit-transform:rotate(180deg);
+      	-o-transform:rotate(180deg);
+      	-ms-transform:rotate(180deg);
+      	transform:rotate(180deg);
+      }
+      .body {
+        padding: 22px 16px;
+        border-top: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+      }
+      .footer {
+        padding: 15px;
+        text-align: right;
+      }
+      .footer .btn {
+        margin-left: 10px;
+      }
+      .btn-close {
+        border: 1px solid #ccc;
+        background-color: #fff;
+      }
+      .btn-close:hover {
+        background-color: #e6e6e6;
+        border: 1px #adadad solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button class="btn btn-modal">点击</button>
+    </div>
+    <div class="madal-layer close-btn">
+      <div class="mod">
+        <header class="head">
+          <span class="close close-btn">×</span>
+          <h3>h<h3>
+        </header>
+        <main class="body">
+          <p>111111111</p>
+          <p>111111111</p>
+        </main>
+        <footer class="footer">
+          <button class="btn btn-close close-btn">取消</button>
+          <button class="btn btn-modal">确定</button>
+        </footer>
+      </div>
+    </div>
+    <script>
+      var btnModal = document.querySelector('.btn-modal');
+      var madalLayer = document.querySelector('.madal-layer');
+      var closeBtn = document.querySelector('.close-btn');
+      var mod = document.querySelector('.mod');
+      btnModal.addEventListener('click', function() {
+        madalLayer.style.display = 'block';
+      });
+      closeBtn.addEventListener('click', function() {
+        this.style.display = 'none';
+      });
+      mod.addEventListener('click',function(e) {
+        /*function(e)中的参数“e”是'click'这个意思*/
+        e.stopPropagation();
+        /*如果点击事件里包含class="close-btn"则生效display:none;*/
+        if (e.target.classList.contains('close-btn')) {
+          /*e.target指的是该对象里的子对象，也是触发这个事件的对象！*/
+          closeBtn.style.display = 'none';
+        }
+      });
+    </script>
+  </body>
+</html>

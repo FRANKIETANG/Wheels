@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+  <style>
+  .con {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .con>table {
+    margin-top: 30px;
+  }
+
+  .tbone {
+    border-collapse: collapse;/*为表格设置合并边框模型*/
+    border-spacing: 0;/*border-spacing 属性设置相邻单元格的边框间的距离（仅用于“边框分离”模式）。*/
+    width: 100%;
+    border: 1px solid #ccc;
+  }
+
+  .tbone tr {
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+
+  .tbone tr:nth-child(even) {
+    background-color: #f1f1f1;
+  }
+
+  .tbone th {
+    color: #fff;
+    background-color: #4CAF50;
+    padding: 8px 8px;
+    font-weight: bold;/*加粗*/
+  }
+  .tbone td {
+    padding: 8px 8px;
+  }
+
+  .tbone.otherstyle {
+    border: none;
+  }
+  .tbone.otherstyle th {
+    background-color: #fff;
+    color: #000;
+  }
+  </style>
+</head>
+<body>
+  <div class="con">
+    <table class="tbone">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Points</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>Adam</td>
+        <td>Johnson</td>
+        <td>67</td>
+      </tr>
+      <tr>
+        <td>Bo</td>
+        <td>Nilsson</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Mike</td>
+        <td>Ross</td>
+        <td>35</td>
+      </tr>
+    </table>
+    <table class="tbone otherstyle">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Points</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>Adam</td>
+        <td>Johnson</td>
+        <td>67</td>
+      </tr>
+      <tr>
+        <td>Bo</td>
+        <td>Nilsson</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Mike</td>
+        <td>Ross</td>
+        <td>35</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

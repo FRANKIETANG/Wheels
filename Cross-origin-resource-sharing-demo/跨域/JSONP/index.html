@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="news">
+            <li>十个一1</li>
+            <li>十个一2</li>
+            <li>十个一3</li>
+        </ul>
+        <button class="change">换换</button>    
+    </div>
+
+    <script>
+        $('.change').addEventListener('click',function(){
+            var script = document.createElement('script')
+            script.src =  'http://localhost:8080/getNews?callback=appendHtml'
+            document.head.appendChild(script)
+            document.head.removeChild(script)  
+        })
+        
+        function appendHtml(news) {
+            var html = ''
+            for (var i=0;i<news.length;i++){
+                html += '<li>' + news[i] + '</li>'
+            }
+            console.log(html)
+            $('.news').innerHTML = html
+        }
+
+        function $(id){
+            return document.querySelector(id)
+        }
+    </script>
+</body>
+</html>

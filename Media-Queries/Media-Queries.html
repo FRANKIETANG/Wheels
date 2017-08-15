@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+        background-color: #ccc;
+    }
+    @media (min-width: 600px){
+        body{
+            background-color: yellow;
+        }
+    }
+    @media (min-width: 900px){
+        body{
+            background-color: green;
+        }
+    }
+    @media (min-width: 1200px){
+        body{
+            background-color: red;
+        }
+    }
+    p{
+        font-size: 30px;
+    }
+    </style>
+</head>
+<body>
+    <p>
+        1. 在页面宽度大于 1200px 时背景为红色
+        <br>
+        2. 在页面 1200px 到 900px 时背景为绿色
+        <br>
+        3. 在页面 900px 到 600px 时背景为黄色
+        <br>
+        4. 宽度小于等于 600px 背景为灰色
+    </p>
+</body>
+</html>

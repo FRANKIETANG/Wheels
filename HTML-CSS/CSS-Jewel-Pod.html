@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+  .con {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .con>div {
+    margin-top: 30px;
+  }
+
+  .alert {
+    color: #fff;
+    padding: 1px 16px;
+    line-height: 1.5;
+    border-radius: 3px;
+  }
+
+  .alert .close {
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    color: inherit;/*inherit	规定应该从父元素继承颜色。*/
+    cursor: pointer;/*cursor 属性规定要显示的光标的类型（形状）。pointer	光标呈现为指示链接的指针（一只手）*/
+  }
+
+  .alert>h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  .alert.success {
+    background-color: #4CAF50;
+  }
+
+  .alert.info {
+    background-color: #2196F3;
+  }
+
+  .alert.danger {
+    background-color: #f44336;
+  }
+
+  .alert.warning {
+    background-color: #ff9800;
+  }
+  </style>
+</head>
+<body>
+  <div class="con">
+    <div class="alert success">
+      <span class="close">×</span>
+      <h3>恭喜你</h3>
+      <p>获得本周学霸，继续加油吧</p>
+    </div>
+    <div class="alert info">
+      <span class="close">×</span>
+      <h3>通知</h3>
+      <p>晚上上课，不要忘了</p>
+    </div>
+    <div class="alert danger">
+      <span class="close">×</span>
+      <h3>天啊</h3>
+      <p>竟然几天没做任务</p>
+    </div>
+    <div class="alert warning">
+      <span class="close">×</span>
+      <h3>警告</h3>
+      <p>学如逆水行舟，不进则退</p>
+    </div>
+  </div>
+</body>
+</html>

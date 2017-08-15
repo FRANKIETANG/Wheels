@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tab</title>
+    <style>
+      ul,li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      * {
+        box-sizing: border-box;//看我做的提示
+      }
+      .tabs {
+        width: 600px;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+      }
+      clearfix:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      .tab-nav>li {
+        float: left;
+        width: 33.333333%;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        padding: 20px;
+        cursor: pointer; //变手啊，你是不是要复习了！
+      }
+      .tab-nav>li:last-child {
+        border-right: none;
+      }
+      .tab-nav>li.active {
+        background-color: #ddd;
+      }
+      .content>li {
+        height: 300px;
+        display: none;
+      }
+      .content>li.active {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tabs">
+      <ul class="tab-nav clearfix">
+        <li class="active">tab1</li>
+        <li>tab2</li>
+        <li>tab3</li>
+      </ul>
+      <ul class="content">
+        <li class="active">内容1</li>
+        <li>内容2</li>
+        <li>内容3</li>
+      </ul>
+    </div>
+
+    <div class="tabs">
+      <ul class="tab-nav clearfix">
+        <li class="active">tab1</li>
+        <li>tab2</li>
+        <li>tab3</li>
+      </ul>
+      <ul class="content">
+        <li class="active">内容1</li>
+        <li>内容2</li>
+        <li>内容3</li>
+      </ul>
+    </div>    
+    <script>
+
+      function Tab(ct){
+        this.ct = ct
+        this.init()
+        this.bind()
+      }
+
+      Tab.prototype.init = function(){
+        this.tabs = this.ct.querySelectorAll('.tab-nav>li')
+        this.content = this.ct.querySelectorAll('.content>li')
+      }
+
+      Tab.prototype.bind = function(){
+        var _this = this
+        this.tabs.forEach(function(tabli){
+          tabli.onclick = function(e){
+            var target = e.target
+            var index = [].indexOf.call(_this.tabs,target)
+            _this.tabs.forEach(function(li){
+              li.classList.remove('active')
+            })
+            target.classList.add('active')
+            
+            _this.content.forEach(function(panel){
+              panel.classList.remove('active')
+            })
+            _this.content[index].classList.add('active')
+          }           
+        })
+      }
+
+      var tab1 = new Tab(document.querySelectorAll('.tabs')[0])
+      var tab2 = new Tab(document.querySelectorAll('.tabs')[1])
+/*
+      var tabs = document.querySelectorAll('.tab-nav>li');
+      var content = document.querySelectorAll('.content>li');
+      tabs.forEach(function (tab) {
+        tab.addEventListener('click',function () {
+          tabs.forEach(function (node) {
+            node.classList.remove('active');
+          })
+          this.classList.add('active');
+          var index = [].indexOf.call(tabs,this); 
+          //这里看提示，大概就是把tab的click和tabs看看能不能匹配，[tabs的索引值].indexOf(click的索引值)
+          content.forEach(function (node) {
+            node.classList.remove('active');
+          })
+          content[index].classList.add('active');
+        })
+      })
+*/     
+    </script>
+  </body>
+</html>

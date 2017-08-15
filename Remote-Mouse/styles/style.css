@@ -1,0 +1,288 @@
+html, body {
+  width:100%;
+  height:100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, Verdana, "Microsoft JhengHei", "Microsoft YaHei", sans-serif;
+  display: block;
+}
+a:hover {
+  text-decoration: none;
+}
+.firstpage {
+  width: 100%;
+  height: 20%;
+  background-image: url(../images/BG_04.jpg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #FFF;
+}
+#firstpage {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.brand-text {
+  width: 295px;
+  height: 71px;
+  background: url(../images/logo.png) no-repeat;
+  font-size: 100%;
+  text-align: center;
+  color: #FFF;
+}
+#brand {
+  margin-top: 6%;
+  padding-left: 6%;
+}
+.firstpage-h1 {
+  width: 90%;
+  height: 50%;
+  padding-top: 10%;
+}
+.firstpage-share {
+  padding-top: 20%
+}
+.btn-text {
+  text-decoration: none;
+  width: 295px;
+  height: 71px;
+  background: url(../images/download_button.png) no-repeat;
+  font-size: 35px;
+  padding-top: 10px;
+  padding-left: 20px;
+  text-align: center;
+  color: #FFF;
+}
+#firstpagebutton {
+  padding-top: 5%;
+}
+.firstpage-left {
+  padding-left: 10%;
+}
+#headle-menu{
+  list-style-type: none;
+}
+#headle-menu li{
+  display: inline;
+  margin: 0px 20px 0px 20px;
+  padding: 0px 20px 0px 20px;
+}
+.firstpage-menu {
+  float: right;
+  margin-top: 6%;
+  margin-bottom: 6%;
+}
+.secondpage {
+  width: 100%;
+  height: 120%;
+  background:url(../images/BG_01.png);
+  position: relative;
+  color: #FFF;
+}
+#secondpage {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+#secondpage-text {
+  padding-top: 5%;
+}
+.middle-head {
+  color: green;
+  line-height: 1.5em;
+}
+.middle-text {
+  color: gray;
+  font-size: 20px;
+  line-height: 2em;
+}
+.thirdpage {
+  width: 100%;
+  height: 130%;
+  background:url(../images/BG_02.png);
+  position: relative;
+  color: #FFF;
+}
+#thirdpage {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+#thirdpage-text {
+  padding-top: 5%;
+}
+.fourthpage {
+  width: 100%;
+  height: 135%;
+  background:url(../images/BG_01.png);
+  position: relative;
+  color: #FFF;
+}
+#fourthpage {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+#fourthpage-text {
+  padding-top: 5%;
+}
+.fifthpage {
+  width: 100%;
+  height: 135%;
+  background:url(../images/BG_02.png);
+  position: relative;
+  color: #FFF;
+}
+#fifthpage {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.fifthpage-head {
+  text-align: center;
+}
+#fifthpage-text {
+  text-align: center;
+}
+.fifthpage-img {
+  padding-top: 30%;
+}
+.sixthpage {
+  width: 100%;
+  height: 130%;
+  background:url(../images/BG_01.png);
+  position: relative;
+  color: #FFF;
+}
+.sixthpage-head {
+  text-align: center;
+}
+#sixthpage {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.seventhpage {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/BG_04.jpg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #FFF;
+}
+.seventhpage-head {
+  text-align: center;
+}
+.seventhpage-btn {
+  text-decoration: none;
+  width: 295px;
+  height: 71px;
+  background: url(../images/download_button.png) no-repeat;
+  font-size: 35px;
+  padding-top: 10px;
+  padding-left: 20px;
+  text-align: center;
+  color: #FFF;
+}
+#seventhpage {
+  padding-top: 15%;
+  padding-bottom: 25%;
+}
+#footermenu {
+  list-style-type: none;
+  font-size: 90%;
+  color: #FFF;
+}
+#footermenu li {
+  display: inline;
+  padding: 20px 20px 0px 0px;
+}
+#footerlang {
+  list-style-type: none;
+  font-size: 70%;
+  color: gray;
+}
+#footerlang li {
+  display: inline;
+  padding: 20px 20px 0px 0px;
+}
+.footer {
+  width: 100%;
+  height: 25%;
+  background: url(../images/BG_03.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #FFF;
+}
+#footer {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#footershare {
+  float: right;
+}
+.textwhite a:link {
+  text-decoration: none;
+  color: #FFF;
+}
+.textwhite a:visited {
+  text-decoration: none;
+  color: #FFF;
+}
+.textwhite a:hover {
+  text-decoration: none;
+  color: #FFF;
+}
+.textwhite a:active {
+  text-decoration: none;
+  color: #FFF;
+}
+.textwhitegreen a:link {
+  text-decoration: none;
+  color: #FFF;
+}
+.textwhitegreen a:visited {
+  text-decoration: none;
+  color: #FFF;
+}
+.textwhitegreen a:hover {
+  text-decoration: none;
+  color: green;
+}
+.textwhitegreen a:active {
+  text-decoration: none;
+  color: #FFF;
+}
+.textgraygreen a:link {
+  text-decoration: none;
+  color: gray;
+}
+.textgraygreen a:visited {
+  text-decoration: none;
+  color: gray;
+}
+.textgraygreen a:hover {
+  text-decoration: none;
+  color: green;
+}
+.textgraygreen a:active {
+  text-decoration: none;
+  color: gray;
+}
+.on a:link {
+  color: green;
+}
+.on a:visited {
+  color: green;
+}
+.on a:hover {
+  color: green;
+}
+.on a:active {
+  color: green;
+}
+seventhpage-btn a:hover {
+  text-decoration: none;
+}
