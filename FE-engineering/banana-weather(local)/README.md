@@ -1,10 +1,10 @@
-#banana-weather
+# banana-weather
 
-##说明
+## 说明
 
 利用天气 API 实现 node 端查询天气的功能
 
-##使用方法
+## 使用方法
 
 **下载**
 
